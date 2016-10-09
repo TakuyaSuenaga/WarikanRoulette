@@ -1,4 +1,4 @@
-# Prototype
+# WarikanRoulette
 
 # 割り勘ルーレット
 
