@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oTJ-5e-bjV" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="40" width="240" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Yen.png" translatesAutoresizingMaskIntoConstraints="NO" id="dBb-uU-JHW">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="123,456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JCd-fi-vhd">
+                                        <rect key="frame" x="60" y="0.0" width="180" height="60"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="vXZ-lx-hvc" id="kKu-QS-7Pl"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jyB-B7-0R5" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="287" width="240" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="一人だけ高額" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igk-OE-2rP">
+                                        <rect key="frame" x="10" y="5" width="140" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="mplus-1c-regular"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Gk-6O-pYP" customClass="FUISwitch">
+                                        <rect key="frame" x="170" y="5" width="60" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQy-lk-uj2" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="239" width="240" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="端数だけの人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWS-er-Kot">
+                                        <rect key="frame" x="10" y="5" width="140" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="mplus-1c-regular"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJ2-3U-dfZ" customClass="FUISwitch">
+                                        <rect key="frame" x="170" y="5" width="60" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SUI-jW-Qja" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="335" width="240" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="テーマ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9V-bN-zO6">
+                                        <rect key="frame" x="10" y="5" width="62" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="mplus-1c-regular"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uc1-CA-o3g" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="191" width="240" height="40"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MRw-PB-f56">
+                                        <rect key="frame" x="10" y="6" width="220" height="29"/>
+                                        <segments>
+                                            <segment title="100円"/>
+                                            <segment title="1000円"/>
+                                            <segment title="10000円"/>
+                                        </segments>
+                                        <color key="tintColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="clickedRoundSegment:" destination="vXZ-lx-hvc" eventType="valueChanged" id="drH-oM-XVV"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CxQ-6b-taW" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="108" width="240" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Persons.png" translatesAutoresizingMaskIntoConstraints="NO" id="A5y-dT-VNb">
+                                        <rect key="frame" x="10" y="7" width="40" height="40"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiX-gg-2KP">
+                                        <rect key="frame" x="60" y="0.0" width="61" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minimumValue="2" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-BR-Jjg">
+                                        <rect key="frame" x="136" y="15" width="94" height="29"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="clickedPersonsStepper:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Sjp-1g-bfD"/>
+                                        </connections>
+                                    </stepper>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOG-so-q0U" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="390" width="240" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qfq-LA-zxA" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="clickedGoButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rNn-aw-iWx"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="fractionLabel" destination="uWS-er-Kot" id="Eiw-Sx-oLd"/>
+                        <outlet property="fractionSwitch" destination="NJ2-3U-dfZ" id="gLB-aV-zy5"/>
+                        <outlet property="fractionView" destination="eQy-lk-uj2" id="MFm-Bs-9BD"/>
+                        <outlet property="goButton" destination="Qfq-LA-zxA" id="Ugi-OM-5va"/>
+                        <outlet property="goButtonView" destination="KOG-so-q0U" id="dYN-Vj-mgi"/>
+                        <outlet property="highpriceLabel" destination="igk-OE-2rP" id="bc1-9x-ZFO"/>
+                        <outlet property="highpriceSwitch" destination="9Gk-6O-pYP" id="brZ-ek-AFC"/>
+                        <outlet property="highpriceView" destination="jyB-B7-0R5" id="Gee-uB-61j"/>
+                        <outlet property="paymentTextField" destination="JCd-fi-vhd" id="dYg-Om-tlD"/>
+                        <outlet property="paymentView" destination="oTJ-5e-bjV" id="RWr-qe-zey"/>
+                        <outlet property="personsLabel" destination="HiX-gg-2KP" id="7s6-vR-Kij"/>
+                        <outlet property="personsStepper" destination="6kB-BR-Jjg" id="uGF-41-ljf"/>
+                        <outlet property="personsView" destination="CxQ-6b-taW" id="Tcf-ob-r8g"/>
+                        <outlet property="roundSegment" destination="MRw-PB-f56" id="yXe-DK-PWm"/>
+                        <outlet property="roundView" destination="Uc1-CA-o3g" id="v6x-hZ-22d"/>
+                        <outlet property="themeLabel" destination="h9V-bN-zO6" id="LXE-sI-2T0"/>
+                        <outlet property="themeView" destination="SUI-jW-Qja" id="HGu-as-Xsm"/>
+                        <segue destination="13k-Gi-lZp" kind="modal" identifier="showRouletteView" animates="NO" id="rKz-wD-bBb"/>
+                        <segue destination="o1c-aX-OKU" kind="modal" identifier="showThemeView" id="N6u-SY-uAZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Theme View Controller-->
+        <scene sceneID="qEp-Y1-LyA">
+            <objects>
+                <viewController id="o1c-aX-OKU" customClass="ThemeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Clo-as-Yii"/>
+                        <viewControllerLayoutGuide type="bottom" id="eTR-IA-cNT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FoG-R8-dgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yt2-Gh-kLQ" customClass="FUIButton">
+                                <rect key="frame" x="230" y="40" width="70" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="760-kO-EMO"/>
+                                    <constraint firstAttribute="width" constant="70" id="Akq-Z5-P5e"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="clickedBackButton:" destination="o1c-aX-OKU" eventType="touchUpInside" id="xSd-KJ-E04"/>
+                                    <action selector="clickedSettingButton:" destination="13k-Gi-lZp" eventType="touchUpInside" id="5Hc-s7-xMR"/>
+                                </connections>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="84" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="VbI-00-ttY">
+                                <rect key="frame" x="0.0" y="84" width="320" height="484"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="84" id="BW6-SZ-Ctl" customClass="ThemeViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="84"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BW6-SZ-Ctl" id="keJ-nc-T5Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="302-JU-zC5">
+                                                    <rect key="frame" x="5" y="3" width="280" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ig9-j2-PfQ" customClass="ThemeView">
+                                                    <rect key="frame" x="5" y="24" width="280" height="50"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="themeView" destination="Ig9-j2-PfQ" id="WtP-2O-5Am"/>
+                                            <outlet property="titleLabel" destination="302-JU-zC5" id="NBa-RI-8ap"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="o1c-aX-OKU" id="KJq-zo-npy"/>
+                                    <outlet property="delegate" destination="o1c-aX-OKU" id="GCD-uA-N1d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VbI-00-ttY" firstAttribute="leading" secondItem="FoG-R8-dgJ" secondAttribute="leading" id="0QS-0f-AGY"/>
+                            <constraint firstAttribute="trailing" secondItem="yt2-Gh-kLQ" secondAttribute="trailing" constant="20" id="8Ts-Sl-MvJ"/>
+                            <constraint firstItem="eTR-IA-cNT" firstAttribute="top" secondItem="VbI-00-ttY" secondAttribute="bottom" id="Evw-lQ-01C"/>
+                            <constraint firstAttribute="trailing" secondItem="VbI-00-ttY" secondAttribute="trailing" id="QcB-vq-6kz"/>
+                            <constraint firstItem="yt2-Gh-kLQ" firstAttribute="top" secondItem="Clo-as-Yii" secondAttribute="bottom" constant="20" id="TUD-jw-MWn"/>
+                            <constraint firstItem="VbI-00-ttY" firstAttribute="top" secondItem="yt2-Gh-kLQ" secondAttribute="bottom" constant="14" id="wKt-f8-dTC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="yt2-Gh-kLQ" id="4Yg-0r-KyD"/>
+                        <outlet property="tableView" destination="VbI-00-ttY" id="1Sv-TZ-hSD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uT2-Ag-Fp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="738"/>
+        </scene>
+        <!--Roulette View Controller-->
+        <scene sceneID="BBs-bD-xEE">
+            <objects>
+                <viewController id="13k-Gi-lZp" customClass="RouletteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WWy-JS-yp5"/>
+                        <viewControllerLayoutGuide type="bottom" id="FjW-W0-d14"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4yK-R2-Ec6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPe-Qh-a5M" customClass="SZAnimationView">
+                                <rect key="frame" x="20" y="20" width="120" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Yen.png" translatesAutoresizingMaskIntoConstraints="NO" id="fbv-I4-kMz">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApH-5e-PdG">
+                                        <rect key="frame" x="30" y="0.0" width="90" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-YL-Ubl" customClass="SZAnimationView">
+                                <rect key="frame" x="150" y="20" width="70" height="30"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Persons.png" translatesAutoresizingMaskIntoConstraints="NO" id="yg8-Wa-msI">
+                                        <rect key="frame" x="5" y="4" width="20" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeS-Yp-6Hb">
+                                        <rect key="frame" x="30" y="0.0" width="40" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.72549019609999998" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w29-S4-gys" customClass="SZAnimationView">
+                                <rect key="frame" x="40" y="410" width="240" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uqz-K2-pdP" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="clickedRouletteButton:" destination="13k-Gi-lZp" eventType="touchUpInside" id="btr-GF-isl"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzU-ZB-VN5" customClass="SZAnimationView">
+                                <rect key="frame" x="20" y="70" width="280" height="280"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STh-uI-Quu" customClass="RouletteView">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Gn-Oc-WWG" customClass="SZAnimationView">
+                                <rect key="frame" x="230" y="20" width="70" height="30"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kdg-de-bkm" customClass="FUIButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="clickedSettingButton:" destination="13k-Gi-lZp" eventType="touchUpInside" id="Ig1-TV-t45"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z4y-hg-lwt" customClass="SZAnimationView">
+                                <rect key="frame" x="20" y="360" width="280" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlJ-NA-d0C" customClass="SliderView">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="assistView" destination="Z4y-hg-lwt" id="OFo-eu-uZs"/>
+                        <outlet property="paymentLabel" destination="ApH-5e-PdG" id="3g8-iu-cHM"/>
+                        <outlet property="paymentView" destination="gPe-Qh-a5M" id="bCG-zh-J3B"/>
+                        <outlet property="personsLabel" destination="CeS-Yp-6Hb" id="ZQy-vI-keD"/>
+                        <outlet property="personsView" destination="NfH-YL-Ubl" id="fuA-j3-msi"/>
+                        <outlet property="roulette" destination="STh-uI-Quu" id="L1r-SX-rYS"/>
+                        <outlet property="rouletteButton" destination="uqz-K2-pdP" id="umK-p4-djf"/>
+                        <outlet property="rouletteButtonView" destination="w29-S4-gys" id="ycK-bf-1yL"/>
+                        <outlet property="rouletteView" destination="yzU-ZB-VN5" id="vrd-1b-qYt"/>
+                        <outlet property="settingButton" destination="Kdg-de-bkm" id="8EX-68-oab"/>
+                        <outlet property="settingButtonView" destination="3Gn-Oc-WWG" id="kiW-1O-9IY"/>
+                        <outlet property="sliderView" destination="mlJ-NA-d0C" id="qB4-Wv-efh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgf-8A-e88" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="32"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Persons.png" width="40" height="40"/>
+        <image name="Yen.png" width="60" height="60"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
